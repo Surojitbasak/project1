@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+nav div h1 {
+  font-family: 'Koulen', cursive;
+}
+
+#brand-image {
+  animation: slide-in 1s;
+}
+
+.about-us {
+  background: url("https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60") no-repeat center center/ cover;
+}
+
+.about-us .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-us h1, .about-us p {
+  text-shadow: 1px 1px 5px 3px lightgray;
+}
+
+@keyframes slide-in {
+  0% {
+    margin-right: 200px;
+  }
+
+  100% {
+    margin-right: 30px;
+  }
+}
